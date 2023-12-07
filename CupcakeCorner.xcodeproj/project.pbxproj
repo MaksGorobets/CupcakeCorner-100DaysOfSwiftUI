@@ -11,6 +11,9 @@
 		E9BFEE0A2B224BA700CECACF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BFEE092B224BA700CECACF /* ContentView.swift */; };
 		E9BFEE0C2B224BA800CECACF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9BFEE0B2B224BA800CECACF /* Assets.xcassets */; };
 		E9BFEE0F2B224BA800CECACF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9BFEE0E2B224BA800CECACF /* Preview Assets.xcassets */; };
+		E9BFEE162B22515B00CECACF /* HapticTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BFEE152B22515B00CECACF /* HapticTestView.swift */; };
+		E9BFEE182B22530300CECACF /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BFEE172B22530300CECACF /* Order.swift */; };
+		E9BFEE1A2B2256AC00CECACF /* AdressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BFEE192B2256AC00CECACF /* AdressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		E9BFEE092B224BA700CECACF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E9BFEE0B2B224BA800CECACF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9BFEE0E2B224BA800CECACF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9BFEE152B22515B00CECACF /* HapticTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTestView.swift; sourceTree = "<group>"; };
+		E9BFEE172B22530300CECACF /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		E9BFEE192B2256AC00CECACF /* AdressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				E9BFEE072B224BA700CECACF /* CupcakeCornerApp.swift */,
 				E9BFEE092B224BA700CECACF /* ContentView.swift */,
+				E9BFEE192B2256AC00CECACF /* AdressView.swift */,
+				E9BFEE172B22530300CECACF /* Order.swift */,
+				E9BFEE152B22515B00CECACF /* HapticTestView.swift */,
 				E9BFEE0B2B224BA800CECACF /* Assets.xcassets */,
 				E9BFEE0D2B224BA800CECACF /* Preview Content */,
 			);
@@ -139,6 +148,9 @@
 			files = (
 				E9BFEE0A2B224BA700CECACF /* ContentView.swift in Sources */,
 				E9BFEE082B224BA700CECACF /* CupcakeCornerApp.swift in Sources */,
+				E9BFEE182B22530300CECACF /* Order.swift in Sources */,
+				E9BFEE1A2B2256AC00CECACF /* AdressView.swift in Sources */,
+				E9BFEE162B22515B00CECACF /* HapticTestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +284,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CupcakeCorner/Preview Content\"";
+				DEVELOPMENT_TEAM = XUYF93872P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CupcakeCorner/Preview Content\"";
+				DEVELOPMENT_TEAM = XUYF93872P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
