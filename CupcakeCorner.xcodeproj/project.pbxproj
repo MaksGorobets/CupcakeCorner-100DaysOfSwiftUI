@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9BAF97F2B24E3E8007CBC62 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAF97E2B24E3E8007CBC62 /* CheckoutView.swift */; };
 		E9BFEE082B224BA700CECACF /* CupcakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BFEE072B224BA700CECACF /* CupcakeCornerApp.swift */; };
 		E9BFEE0A2B224BA700CECACF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BFEE092B224BA700CECACF /* ContentView.swift */; };
 		E9BFEE0C2B224BA800CECACF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9BFEE0B2B224BA800CECACF /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E9BAF97E2B24E3E8007CBC62 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		E9BFEE042B224BA700CECACF /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9BFEE072B224BA700CECACF /* CupcakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerApp.swift; sourceTree = "<group>"; };
 		E9BFEE092B224BA700CECACF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				E9BFEE072B224BA700CECACF /* CupcakeCornerApp.swift */,
 				E9BFEE092B224BA700CECACF /* ContentView.swift */,
 				E9BFEE192B2256AC00CECACF /* AdressView.swift */,
+				E9BAF97E2B24E3E8007CBC62 /* CheckoutView.swift */,
 				E9BFEE172B22530300CECACF /* Order.swift */,
 				E9BFEE152B22515B00CECACF /* HapticTestView.swift */,
 				E9BFEE0B2B224BA800CECACF /* Assets.xcassets */,
@@ -148,6 +151,7 @@
 			files = (
 				E9BFEE0A2B224BA700CECACF /* ContentView.swift in Sources */,
 				E9BFEE082B224BA700CECACF /* CupcakeCornerApp.swift in Sources */,
+				E9BAF97F2B24E3E8007CBC62 /* CheckoutView.swift in Sources */,
 				E9BFEE182B22530300CECACF /* Order.swift in Sources */,
 				E9BFEE1A2B2256AC00CECACF /* AdressView.swift in Sources */,
 				E9BFEE162B22515B00CECACF /* HapticTestView.swift in Sources */,
