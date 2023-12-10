@@ -11,6 +11,7 @@ struct CheckoutView: View {
     
     var order: Order
     
+    @State private var confirmationTitle = ""
     @State private var confirmationMessage = ""
     @State private var showingCheck = false
     @State private var showingConfirmation = false
@@ -51,7 +52,10 @@ struct CheckoutView: View {
                     .shadow(radius: 5)
             }
         }
-        .alert("Thank you", isPresented: $showingConfirmation) {
+        .onAppear {
+            order.saveCredentials()
+        }
+        .alert(confirmationTitle, isPresented: $showingConfirmation) {
             Button("OK") {}
         } message: {
             Text(confirmationMessage)
@@ -80,6 +84,7 @@ struct CheckoutView: View {
             let decodedOrder = try JSONDecoder().decode(Order.self, from: data)
             print("Data downloaded and decoded")
             
+            confirmationTitle = "Thank you!"
             confirmationMessage = "Your order for \(Order.types[decodedOrder.type]) x\(decodedOrder.quantity) is placed! You may see the details on the check."
             
             showingConfirmation = true
@@ -87,6 +92,9 @@ struct CheckoutView: View {
             return decodedOrder
         } catch {
             print("Upload failed \(error)")
+            confirmationTitle = "Oops... There is a problem."
+            confirmationMessage = error.localizedDescription
+            showingConfirmation = true
         }
         return nil
     }
