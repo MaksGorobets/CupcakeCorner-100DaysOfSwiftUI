@@ -29,6 +29,7 @@ struct CheckoutView: View {
                         } placeholder: {
                             ProgressView()
                         }
+                        .accessibilityHidden(true)
                         .frame(height: 233)
                         Text("Your total is: \(order.total, format: .currency(code: "USD"))")
                             .font(.title)
@@ -37,19 +38,19 @@ struct CheckoutView: View {
                         }
                     }
                 }
-            }
-            VStack {
-                Spacer()
+            }            
+            .safeAreaInset(edge: .bottom, alignment: .center) {
                 Button("Place order") {
                     Task {
                         guard let order = await placeOrder() else { return }
                         returnedOrder = order
                     }
                 }
-                    .buttonStyle(.borderedProminent)
-                    .tint(.green)
-                    .clipShape(RoundedRectangle(cornerRadius: 25.0))
-                    .shadow(radius: 5)
+                .padding(.vertical)
+                .buttonStyle(.borderedProminent)
+                .tint(.green)
+                .clipShape(RoundedRectangle(cornerRadius: 25.0))
+                .shadow(radius: 5)
             }
         }
         .onAppear {
